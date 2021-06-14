@@ -1,19 +1,28 @@
 # bash-directory-counter
-BASH Script to count the number of files and sub-directories for a school assignment
+BASH Script to count the number of files and sub-directories in a specified directory for a school assignment
 
 Requirements:
-Call the script searchlog.sh
 
-Prompt the user for:
-a) The pattern to be searched for
-b) Whether they want an whole word match or any match on the line
-c) If they want to do an inverted match, i.e. retrieve lines that do not contain the pattern
+When the script is run, a directory will be used by your tutor at the command line, e.g. ./countdf.sh dirname. 
 
-If no match is found, report to the user “No matches found”.
+The directory specified will contain:
+o a number of text files that contain data
+o a number of text files that do not contain any data
+o a number of child directories that themselves contain files and directories
+o a number of child directories that are themselves empty
 
-If a match is found, echo the number of matches found, e.g. 5 matches found, and then each of
-matching word(s)/line(s) to the terminal with their corresponding line numbers in the source file.
+The output of the script to the terminal will appear as follows:
 
-In either case, ensure the user has the option to do another search if they so wish or exit the script.
+The [dirname] directory contains:
 
-Ensure all search options are case-insensitive
+x files that contain data
+
+x files that are empty
+
+x non-empty directories
+
+x empty directories
+
+where [dirname] represents the directory of your tutor’s choosing and x represents the number of files and directories found matching each criterion.
+
+Be sure that the script can be run from any directory it is placed in within your tutor's Linux user directory structure.
